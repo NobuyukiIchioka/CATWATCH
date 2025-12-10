@@ -1,0 +1,104 @@
+@charset"UTF-8";
+/* **************
+common
+**************** */
+
+body{
+    font-size: 13px;
+}
+
+a:link,a:visited{
+    color: #90be59;
+}
+
+.border{
+    border: 1px solid #eee;
+    padding: 3px;
+}
+
+
+/* **************
+header
+**************** */
+/* headerContent */
+.headerContent{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0 ;
+}
+
+.logo img{
+    width: 300px;
+    vertical-align: bottom;
+}
+
+/* globalNavigation */
+.globalNavigation{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #e2e2e2;
+    background: linear-gradient(to bottom, #fff 0%, #eaeaea 99%);
+}
+
+.globalNavigation ul{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /* はみ出し処理はボックスモデルの最後 */
+}
+
+.globalNavigation li{
+    float: left;
+    width: 249px;
+    border-left: 1px solid #e2e2e2;
+}
+
+.globalNavigation li:last-child{
+    width: 249px;
+    border-right: 1px solid e2e2e2;
+}
+
+.globalNavigation a{
+    display: block;
+    padding: 10px 0;
+    color: #777;
+    text-align: center;
+    text-decoration: none;
+}
+
+.globalNavigation a:hover{
+    background: #f8f8f8;
+}
+
+.globalNavigation .current{
+    border-bottom: 3px solid #90be59;
+    background: f2f2f2;
+    font-weight: bold;
+}
+
+.globalNavigation.current a{
+    margin-bottom: -3px;
+    background: none;
+}
+
+/* Main Image */
+.mainImage{
+    width: 1000px;
+    height: 440px;
+    margin: 30px auto 50px;
+}
+
+.mainImage .imageScroll{
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.mainImage img{
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+/* **************
+footer
+**************** */
+
