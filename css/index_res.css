@@ -34,7 +34,7 @@ h2{
 
 .product-list li{
     overflow: hidden;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .product-list .image{
@@ -60,7 +60,7 @@ h2{
 ****************/
 .news{
     float: right;
-    width: 300x;
+    width: 300px;
 }
 
 .newsList li{

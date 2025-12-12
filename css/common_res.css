@@ -1,4 +1,4 @@
-@charset"UTF-8";
+@charset "UTF-8";
 /* **************
 common
 **************** */
@@ -13,7 +13,7 @@ a:link,a:visited{
 
 .border{
     border: 1px solid #eee;
-    padding: 3px;
+    border-radius: 3px;
 }
 
 
@@ -52,13 +52,13 @@ header
 }
 
 .globalNavigation li:last-child{
-    width: 249px;
-    border-right: 1px solid e2e2e2;
+    width: 248px;
+    border-right: 1px solid #e2e2e2;
 }
 
 .globalNavigation a{
     display: block;
-    padding: 10px 0;
+    padding: 10px 30px;
     color: #777;
     text-align: center;
     text-decoration: none;
@@ -70,11 +70,11 @@ header
 
 .globalNavigation .current{
     border-bottom: 3px solid #90be59;
-    background: f2f2f2;
+    background: #f2f2f2;
     font-weight: bold;
 }
 
-.globalNavigation.current a{
+.globalNavigation .current a{
     margin-bottom: -3px;
     background: none;
 }
@@ -101,4 +101,60 @@ header
 /* **************
 footer
 **************** */
+/* Footer Navigation */
+.siteLinks{
+    padding: 30px;
+    background: #e8e8e8;
+}
 
+.siteLinks .inner{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.siteLinks .logo{
+    float: left;
+    width: 200px;
+}
+
+.siteLinks .logo img{
+    display: block;
+    width: 120px;
+    overflow: hidden;
+}
+
+.siteLinks .linkList{
+    overflow: hidden;
+}
+
+.siteLinks dl{
+    float: left;
+    width: 160px;
+    font-size: 12px;
+}
+
+.siteLinks dt{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.siteLinks dd{
+    margin-bottom: 5px;
+}
+
+.siteLinks a{
+    color: #444;
+    text-decoration: none;
+}
+
+
+/* Copyright */
+.copyright{
+    display: block;
+    padding: 10px 0;
+    background: #222;
+    color: #f2f2f2;
+    font-size: 11px;
+    text-align: center;
+}
