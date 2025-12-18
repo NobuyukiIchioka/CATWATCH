@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>CAT WATCH - 国産スマートウォッチのパイオニア</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
   <link rel="stylesheet" href="css/common_res.css" type="text/css">
   <link rel="stylesheet" href="css/index_res.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,6 +87,48 @@
   <!-- おわり/メインコンテンツ -->
   <!-- 共通footer部分 -->
   <footer>
+    <!-- 問い合わせフォーム -->
+    <section class="contact" id="contact">
+      <div class="inner">
+        <h2>お問い合わせ</h2>
+        <form action="">
+          <dl>
+            <dt><label for="name">お名前</label></dt>
+            <dd>
+              <input id="name" type="text" placeholder="例）日本　太郎" name="name">
+            </dd>
+          </dl>
+          <dl class="required">
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd>
+              <input id="email" type="email" placeholder="例）sample@example.com" name="email" required>
+            </dd>
+          </dl>
+          <dl class="required">
+            <dt>お問い合わせの種類</dt>
+            <dd>
+              <select name="category" required>
+                <option value="">選択してください</option>
+                <option value="製品について">製品について</option>
+                <option value="修理・交換">修理・交換</option>
+                <option value="その他">その他</option>
+              </select>
+            </dd>
+          </dl>        
+          <dl class="required">
+            <dt>内容（1000文字以内）</dt>
+            <dd>
+              <textarea name="message" maxlength="1000" required></textarea>
+            </dd>
+          </dl>
+          <div class="buttonArea">
+            <button type="submit" class="button">送信する</button>
+          </div>
+        </form>
+      </div><!-- inner -->
+    </section>
+    <!-- おわり/問い合わせフォーム -->
+    <!-- fooerサイトリンク -->
     <div class="siteLinks">
       <div class="inner">
         <div class="logo"><img src="./images/logo_square.png" alt="株式会社 CAT WATCH"></div>
