@@ -121,29 +121,32 @@ footer
 .siteLinks .logo img{
     display: block;
     width: 120px;
-    overflow: hidden;
 }
 
 .siteLinks .linkList{
     overflow: hidden;
 }
 
-.siteLinks dl{
+.siteLinks .linkList dl{
     float: left;
     width: 160px;
     font-size: 12px;
 }
 
-.siteLinks dt{
+.siteLinks .linkList dt{
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.siteLinks dd{
+.siteLinks .linkList dt a{
+    text-decoration: none;
+}
+
+.siteLinks .linkList dd{
     margin-bottom: 5px;
 }
 
-.siteLinks a{
+.siteLinks .linkList dd a{
     color: #444;
     text-decoration: none;
 }

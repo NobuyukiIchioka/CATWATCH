@@ -2,9 +2,109 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>CAT WATCH - ニュース</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="css/common_res.css" type="text/css">
+  <link rel="stylesheet" href="css/page.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ・width=device-width
+    意味: 「ページの横幅」を「そのデバイス（スマホ）の画面幅」と同じにする
+  ・initial-scale=1.0
+    意味: ページを表示する際に拡大・縮小率を1.0（100%）にする -->
 </head>
+
 <body>
+  <!-- 共通header部分 -->
+  <header>
+    <div class="headerContent">
+      <h1 class="logo">
+        <a href="index_responsive.html"><img src="images/logo.png" alt="株式会社 CAT WATCH"></a>
+      </h1>
+    </div>
+    <nav class="globalNavigation">
+      <ul>
+        <li><a href="index_responsive.html">ホーム</a></li>
+        <li class="current"><a href="./news_responsive.html">ニュース</a></li>
+        <li><a href="./product_responsive.html">製品一覧</a></li>
+        <li><a href="./company_responsive.html">会社情報</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- おわり/共通header部分 -->
+  <!-- メインコンテンツ -->
+  <main>
+    <h1>ニュース</h1>
+    <ul class="LocalNavigation"> 
+      <li><a href="#2016">2016年</a></li>
+      <li><a href="#2015">2015年</a></li>
+    </ul>
+    <p class="year" id="2016">2016年</p>
+    <div class="newsList">
+      <article>
+        <h2>高機能スポーツウォッチ「SPORTIA α」の発売イベントを行います</h2>
+        <p class="date">2016.8.12</p>
+        <div class="summary">
+          <div><img src="./images/photo_01.jpg" alt="SPORTIA α を付けて運動する女性の写真"></div>
+          <p>ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りま  すここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入ります  ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますこ  こに文字が入りますここに文字が入りますここに文字が入ります。</p>
+        </div>
+      </article>
+      <article>
+        <h2>「LEAF」がベストデザイン スマートウォッチ部門で金賞を獲得しました</h2>
+        <p class="date">2016.6.3</p>
+        <div class="summary">
+          <div><img src="./images/watch_b01.jpg" alt="LEAF イメージ画像"></div>
+          <p>ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りま  すここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入ります  ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますこ  こに文字が入りますここに文字が入りますここに文字が入ります。</p>
+        </div>
+      </article>
+  </div>
+  <p class="year" id="2015">2015年</p>
+   <div class="newsList">
+    <article>
+      <h2>ニュースタイトルが入る</h2>
+      <p class="date">2015.1.1</p>
+      <div class="summary">
+        <div><img src="./images/photo_02.jpg" alt="SPORTIA α イメージ画像"></div>
+        <p>ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りま  すここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入ります  ここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますここに文字が入りますこ  こに文字が入りますここに文字が入りますここに文字が入ります。</p>
+      </div>
+    </article>
+  </div>
+
+  </main>
+  <!-- おわり/メインコンテンツ -->
+  <!-- 共通footer部分 -->
+  <footer>
+    <!-- fooerサイトリンク -->
+    <div class="siteLinks">
+      <div class="inner">
+        <div class="logo"><img src="./images/logo_square.png" alt="株式会社 CAT WATCH"></div>
+        <div class="linkList">
+          <dl>
+            <dt><a href="./index_responsive.html">ホーム</a></dt>
+            <dd><a href="./index_responsive.html#">お問い合わせ</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./news.html">ニュース</a></dt>
+            <dd><a href="./news.html#2016">2016年</a></dd>
+            <dd><a href="./news.html#2015">2015年</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./product.html">製品一覧</a></dt>
+            <dd><a href="./product.html#sportia_a">SPORTIA α</a></dd>
+            <dd><a href="./product.html#leaf">LEAF</a></dd>
+            <dd><a href="./product.html#beatle">BEATLE</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./company.html">会社情報</a></dt>
+            <dd><a href="./company.html#vision">ビジョン</a></dd>
+            <dd><a href="./company.html#access">アクセス</a></dd>
+            <dd><a href="./company.html#detail">会社概要</a></dd>
+          </dl>
+        </div>
+      </div><!-- inner -->
+    </div><!-- siteLinks -->
+    <p><small class="copyright">Copyright (C) 2015-2016 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
+  </footer>
+
 </body>
 </html>
