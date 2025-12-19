@@ -1,0 +1,65 @@
+/**********
+ common styles 
+ **************/
+
+
+ main{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+main .sin{
+    width: 700px;
+}
+
+main h1{
+    margin-bottom: 50px;
+    color: #677;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* LocalNavigation */
+.LocalNavigation{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.LocalNavigation li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.LocalNavigation li a{
+    text-decoration: none;
+}
+
+
+/* **********
+news
+*********** */
+.news .year{
+    margin-bottom: 20px;
+    color: #aaa;
+    font-size: 23px;
+}
+
+.newsList article{
+    margin-bottom: 80px;
+}
+
+.newsList article h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.newsList .summary p{
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+
+.newsList .summary img{
+    width: 100%;
+}
+
