@@ -2,9 +2,132 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>CAT WATCH - 会社情報</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="css/common_res.css" type="text/css">
+  <link rel="stylesheet" href="css/page.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ・width=device-width
+    意味: 「ページの横幅」を「そのデバイス（スマホ）の画面幅」と同じにする
+  ・initial-scale=1.0
+    意味: ページを表示する際に拡大・縮小率を1.0（100%）にする -->
 </head>
+
 <body>
+  <!-- 共通header部分 -->
+  <header>
+    <div class="headerContent">
+      <h1 class="logo">
+        <a href="index_responsive.html"><img src="images/logo.png" alt="株式会社 CAT WATCH"></a>
+      </h1>
+    </div>
+    <nav class="globalNavigation">
+      <ul>
+        <li><a href="index_responsive.html">ホーム</a></li>
+        <li><a href="./news_responsive.html">ニュース</a></li>
+        <li><a href="./product_responsive.html">製品一覧</a></li>
+        <li class="current"><a href="./company_responsive.html">会社情報</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- おわり/共通header部分 -->
+  <!-- メインコンテンツ -->
+  <main class="company">
+    <h1>会社情報</h1>
+      <ul class="LocalNavigation"> 
+        <li><a href="#vision">ビジョン</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#detail">会社概要</a></li>
+      </ul>
+      <img class="border" src="./images/mainImage_01.jpg" alt="生活をデザインする">
+    <section class="vision" id="vision">
+      <h2>ビジョン</h2>
+      <p class="visionText">時計から日常生活をデザインする</p>
+      <p>ここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入りますここに文言が入ります</p>
+    </section>
+    <section class="access" id="access">
+      <h2>アクセス</h2>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7699875254802!2d139.69906087659066!3d35.65803823124633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b582c15c3cf%3A0x8c0e68a8aa03fd5c!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1766297093620!5m2!1sja!2sjp" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- map" -->
+      <p>JR「渋谷駅」から徒歩1分</p>
+      <p>〒154-0043 東京都渋谷区 xxビル2F</p>
+    </section>
+    <section class="detail" id="detail">
+      <h2>会社概要</h2>
+      <dl>
+        <dt>社名</dt>
+        <dd>WATCH株式会社</dd>
+      </dl>
+      <dl>
+        <dt>英文名称</dt>
+        <dd>CAT WATCH.Co.,Ltd.</dd>
+      </dl>
+      <dl>
+        <dt>事業内容</dt>
+        <dd>スマートウォッチの製造・販売</dd>
+      </dl>
+      <dl>
+        <dt>TEL</dt>
+        <dd>00-0000-0000</dd>
+      </dl>
+      <dl>
+        <dt>FAX</dt>
+        <dd>03-0000-0000</dd>
+      </dl>
+      <dl>
+        <dt>役員</dt>
+        <dd>代表取締役　日本 太郎</dd>
+        <dd>取締役　日本 花子</dd>
+      </dl>
+      <dl>
+        <dt>社員数</dt>
+        <dd>20人</dd>
+      </dl>
+      <dl>
+        <dt>お問い合わせ</dt>
+        <dd>
+          以下のメールアドレスまでご連絡ください<br>
+          <a href="sample@example.com">sample@example.com</a>
+        </dd>
+      </dl>
+    </section>
+  </main>
+  <!-- おわり/メインコンテンツ -->
+  <!-- 共通footer部分 -->
+  <footer>
+    <!-- fooerサイトリンク -->
+    <div class="siteLinks">
+      <div class="inner">
+        <div class="logo"><img src="./images/logo_square.png" alt="株式会社 CAT WATCH"></div>
+        <div class="linkList">
+          <dl>
+            <dt><a href="./index_responsive.html">ホーム</a></dt>
+            <dd><a href="./index_responsive.html#">お問い合わせ</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./news.html">ニュース</a></dt>
+            <dd><a href="./news.html#2016">2016年</a></dd>
+            <dd><a href="./news.html#2015">2015年</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./product.html">製品一覧</a></dt>
+            <dd><a href="./product.html#sportia_a">SPORTIA α</a></dd>
+            <dd><a href="./product.html#leaf">LEAF</a></dd>
+            <dd><a href="./product.html#beatle">BEATLE</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="./company.html">会社情報</a></dt>
+            <dd><a href="./company.html#vision">ビジョン</a></dd>
+            <dd><a href="./company.html#access">アクセス</a></dd>
+            <dd><a href="./company.html#detail">会社概要</a></dd>
+          </dl>
+        </div>
+      </div><!-- inner -->
+    </div><!-- siteLinks -->
+    <p><small class="copyright">Copyright (C) 2015-2016 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
+  </footer>
+
 </body>
 </html>
