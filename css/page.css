@@ -63,3 +63,153 @@ news
     width: 100%;
 }
 
+/* **********
+product
+********** */
+.product-list > li{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.product-list > li > img{
+    display: block;
+    float: left;
+    width: 400px;
+    margin-right: 50px;
+}
+
+.product-list .info{
+    overflow: hidden; /* 文字がはみ出ないように指定 */
+}
+
+.product-list h2{
+    margin-bottom: 6px;
+    font-size: 24px;
+}
+
+.product-list h3{
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.product-list{
+    .category,
+    .summary, 
+    .features, 
+    .spec{
+    margin-bottom: 10px;
+    }
+}
+
+
+.product-list .category span{
+    padding: 3px 10px;
+    background: #f8f8f8;
+    color: #999;
+    font-size: 10px;
+}
+
+.product-list .features li::before{
+    vertical-align: middle;
+    content: " . ";
+    font-size: 16px;
+}
+
+.product-list .spec table{
+    width: 100%;
+}
+
+.product-list .spec tr:nth-child(2n-1){
+    background: #f8f8f8;
+}
+
+.product-list .spec{
+    th,
+    td{
+        padding: 4px 20px;
+        font-size: 12px;
+    }
+}
+
+/* *********
+company
+******* */
+.company img{
+    display: block;
+    width: 980px;
+    margin: 0 auto 40px;
+}
+
+.company section{
+    width: 700px;
+    margin: 0 auto 30px;
+    font-size: 15px;
+}
+
+.company section h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 27px;
+}
+
+/* vision */
+.company .visionText{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 30px;
+}
+
+.company{
+    .visionText:before,
+    .visionText:after{
+        vertical-align: text-top;
+        line-height: 40px;
+        font-size: 80px;
+    }
+}
+
+.company .visionText:before{
+    content: "“";
+    margin-right: 10px;
+}
+   
+
+.company  .visionText:after{
+    content: "”";
+    margin-left: 10px;
+}
+
+/* access */
+.company　.map{
+    margin-bottom: 20px;
+}
+
+/* detail */
+.company .detail dl{
+    display: table;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    font-size: 13px;
+}
+
+.company .detail dl:last-child{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.company .detail{
+    dt,
+    dd{
+        display: table-cell;
+        padding: 13px 20px;
+        vertical-align: top;
+    }
+}
+
+.company .detail dt{
+    width: 100px;
+    background: #f8f8f8;
+}
+
+
