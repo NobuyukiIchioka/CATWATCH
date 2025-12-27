@@ -164,11 +164,29 @@
     </div><!-- siteLinks -->
     <p><small class="copyright">Copyright (C) 2015-2016 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
   </footer>
+  <!-- ページ上部に戻るボタン -->
+  <a href="#" id="go-top" class="go-top">^</a>
+
 <!-- jQuery読み込み https://code.jquery.com/jquery-3.7.1.min.js -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script>
   $(function(){
-    //ここからjQueryのコードを書きます
+  //ここからjQueryのコードを書きます
+    $(window).scroll(function(){
+      //Consoleでスクロール量を確認できる
+      console.log($(window).scrollTop());
+      // ページ上部に戻るボタンの処理
+      if($(window).scrollTop() >= 200)
+        {$("#go-top").fadeIn(2000);}
+        else{$("#go-top").fadeOut("slow");}
+    });
+    //クリックすると、スクロールが200以上かアラートで表示する
+    // $(window).click(function()
+    //   {if($(window).scrollTop() >= 200)
+    //     {alert("200px以上スクロールしました");}
+    //     else{alert("スクロールは200px未満です");}
+    //   }
+    // );
   });
 </script>
 </body>

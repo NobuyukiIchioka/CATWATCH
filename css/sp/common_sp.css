@@ -22,6 +22,28 @@ section{
   padding: 20px;
 }
 
+.go-top{
+  /* ① ポジショニング（配置） */
+  display: block;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+
+  /* ② ボックスモデル（サイズ・形） */
+  width: 3rem;
+  height: 3rem;
+  
+  /* ③ タイポグラフィ（文字）[設計 → 見た目 → 揃え → 装飾] */
+  font-size: 2rem;        /* 設計：文字のサイズ（基準を決める） */
+  line-height: 3.8rem;    /* 設計：行の高さ（今回は縦中央寄せにも使ってる） */
+  color: #fff;            /* 見た目：文字の色（インク） */
+  text-align: center;     /* 揃え：文字の配置（左右の整列） */
+  text-decoration: none;  /* 装飾：下線などの飾り */
+
+  /* ④ ビジュアル（装飾） */  
+  background-color: #90be59;
+}
+
 /***************
   header
 ****************/
