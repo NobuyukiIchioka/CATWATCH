@@ -10,16 +10,17 @@
 
   <title>CAT WATCH - 国産スマートウォッチのパイオニア</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
-   <link rel="stylesheet" href="/css/yui_cssreset-min.css">
+    <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
+  <link rel="stylesheet" href="./css/yui_cssreset-min.css">
+  <!-- pc用CSS -->
   <link rel="stylesheet" media="(min-width: 641px)" href="css/common_res.css" >
   <link rel="stylesheet" media="(min-width: 641px)" href="css/page.css" >
   <!-- sp用CSS -->
-    <link rel="stylesheet" media="(max-width: 640px)" href="css/sp/common_sp.css" >
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/sp/common_sp.css" >
   <link rel="stylesheet" media="(max-width: 640px)" href="css/sp/page_sp.css" >
 </head>
 
-<body>
+<body id="page-top">
   <!-- 共通header部分 -->
   <header>
     <div class="headerContent">
@@ -141,6 +142,29 @@
     </div><!-- siteLinks -->
     <p><small class="copyright">Copyright (C) 2015-2016 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
   </footer>
+  <!-- ページ上部に戻るボタン -->
+  <a href="#page-top" id="go-top" class="go-top" data-scroll>^</a>
 
+<!-- ＊＊＊＊＊＊jsセクション＊＊＊＊＊＊＊＊ -->
+  <!-- jQuery読み込み https://code.jquery.com/jquery-3.7.1.min.js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+	<!-- スムーズスクロール（smooth-scroll）なめらかなスクロールを実現するライブラリ -->
+    <!-- 🔗参照元： https://github.com/cferdinandi/smooth-scroll -->
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+
+  <script>
+    $(function(){
+    //ここからjQueryのコードを書きます
+      // スムーズスクロール
+      var scroll = new SmoothScroll('a[href*="#"]');
+
+      // ページ上部に戻るボタンの処理
+      $(window).scroll(function(){
+        if($(window).scrollTop() >= 200)
+          {$("#go-top").fadeIn(2000);}
+          else{$("#go-top").fadeOut("slow");}
+      });
+    });
+  </script>
 </body>
 </html>

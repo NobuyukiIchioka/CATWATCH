@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<!-- 《失敗》ヘッド読み込み -->
+<!-- 《失敗》<div id="parts-head"></div> -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +13,21 @@
 
   <title>CAT WATCH - 国産スマートウォッチのパイオニア</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
+  <link rel="stylesheet" href="./css/yui_cssreset-min.css">
+  <!-- pc用CSS -->
   <link rel="stylesheet" media="(min-width: 641px)" href="css/common_res.css" >
   <link rel="stylesheet" media="(min-width: 641px)" href="css/index_res.css" >
   <!-- sp用CSS -->
   <link rel="stylesheet" media="(max-width: 640px)" href="css/sp/common_sp.css" >
   <link rel="stylesheet" media="(max-width: 640px)" href="css/sp/index_sp.css" >
-  <!-- <link rel="stylesheet" href="/js/jquery-3.7.1.min.js"> -->
+  <!-- TOPカルーセルモジュールのCSS：https://kenwheeler.github.io/slick/-->
+   <link rel="stylesheet" href="./js/slick/slick.css">
+   <link rel="stylesheet" href="./js/slick/slick-theme.css">
 </head>
 
-<body>
+<body id="page-top">
+
   <!-- 共通header部分 -->
   <header>
     <div class="headerContent">
@@ -38,10 +46,10 @@
     <!--  カルーセルモジュール  -->
     <div class="mainImage">
       <div class="imageScroll">
-        <div><a href="./product.html#sportia_a">
-          <img src="./images/mainImage_02.jpg" alt="SPORTIA α イメージ画像">
-        </a></div>
-      </div>
+          <div><a href="./product_responsive.html#sportia_a"><img src="./images/mainImage_02.jpg" alt="SPORTIA α イメージ画像"></a></div>
+          <div><a href="./product_responsive.html#leaf"><img src="./images/mainImage_03.jpg" alt="LEAF イメージ画像"></a></div>
+          <div><a href="./company_responsive.html"><img src="./images/mainImage_01.jpg" alt="BEATLE イメージ画像"></a></div>
+      </div><!-- imageScroll -->
     </div>
     <!--  おわり/カルーセルモジュール  -->
   </header>
@@ -91,6 +99,8 @@
   </main>
   <!-- おわり/メインコンテンツ -->
   <!-- 共通footer部分 -->
+    <!-- 《失敗》フッター読み込み -->
+    <!-- 《失敗》<div id="parts-footer"></div> -->
   <footer>
     <!-- 問い合わせフォーム -->
     <section class="contact" id="contact">
@@ -165,29 +175,52 @@
     <p><small class="copyright">Copyright (C) 2015-2016 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
   </footer>
   <!-- ページ上部に戻るボタン -->
-  <a href="#" id="go-top" class="go-top">^</a>
+  <a href="#page-top" id="go-top" class="go-top" data-scroll>^</a>
 
-<!-- jQuery読み込み https://code.jquery.com/jquery-3.7.1.min.js -->
-<script src="js/jquery-3.7.1.min.js"></script>
-<script>
-  $(function(){
-  //ここからjQueryのコードを書きます
-    $(window).scroll(function(){
-      //Consoleでスクロール量を確認できる
-      console.log($(window).scrollTop());
-      // ページ上部に戻るボタンの処理
-      if($(window).scrollTop() >= 200)
-        {$("#go-top").fadeIn(2000);}
-        else{$("#go-top").fadeOut("slow");}
+<!-- ＊＊＊＊＊＊jsセクション＊＊＊＊＊＊＊＊ -->
+  <!-- jQuery読み込み https://code.jquery.com/jquery-3.7.1.min.js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- カルーセルモジュール　https://github.com/kenwheeler/slick/archive/v1.8.1.zip -->
+  <script src="./js/slick/slick.min.js"></script>
+	<!-- スムーズスクロール（smooth-scroll）なめらかなスクロールを実現するライブラリ -->
+    <!-- 🔗参照元： https://github.com/cferdinandi/smooth-scroll -->
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+
+  
+  <script>
+    $(function(){
+    //ここからjQueryのコードを書きます
+      // スムーズスクロール
+      var scroll = new SmoothScroll('a[href*="#page-top"]');
+
+      // TOPカルーセルモジュール（slick仕様）
+      $('.imageScroll').slick({
+        autoplay:true,        // 自動再生
+        autoplaySpeed: 4000,        // 切り替わる間隔の時間
+        dots: true,        // 下部にドットを表示
+        Infinity: true,        // 最後までいった最初に戻る、無限ループ
+        speed: 500,        // スライドするスピード
+        fade: true,        // 演出を移動からフェードインする
+        cssEase: 'liner',  // CSSのイージング（加速のしかた）:最初から最後まで同じ速さ 
+          // (例)ease だと、最初ゆっくり → 途中速い → 最後またゆっくり
+      });
+
+      $(window).scroll(function(){
+        //Consoleでスクロール量を確認できる
+        console.log($(window).scrollTop());
+        // ページ上部に戻るボタンの処理
+        if($(window).scrollTop() >= 200)
+          {$("#go-top").fadeIn(2000);}
+          else{$("#go-top").fadeOut("slow");}
+      });
+      //クリックすると、スクロールが200以上かアラートで表示する
+      // $(window).click(function()
+      //   {if($(window).scrollTop() >= 200)
+      //     {alert("200px以上スクロールしました");}
+      //     else{alert("スクロールは200px未満です");}
+      //   }
+      // );
     });
-    //クリックすると、スクロールが200以上かアラートで表示する
-    // $(window).click(function()
-    //   {if($(window).scrollTop() >= 200)
-    //     {alert("200px以上スクロールしました");}
-    //     else{alert("スクロールは200px未満です");}
-    //   }
-    // );
-  });
-</script>
+  </script>
 </body>
 </html>
