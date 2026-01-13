@@ -71,7 +71,7 @@ product
     margin-bottom: 80px;
 }
 
-.product-list > li > img{
+.product-list  li  img{
     display: block;
     float: left;
     width: 400px;
@@ -105,9 +105,9 @@ product
 
 .product-list .category span{
     padding: 3px 10px;
-    background: #f8f8f8;
-    color: #999;
     font-size: 10px;
+    color: #999;
+    background: #f8f8f8;
 }
 
 .product-list .features li::before{
@@ -118,6 +118,7 @@ product
 
 .product-list .spec table{
     width: 100%;
+    border-collapse: collapse;/* 今回、線はひかないが念のために指定しておく */
 }
 
 .product-list .spec tr:nth-child(2n-1){

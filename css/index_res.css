@@ -23,6 +23,10 @@ h2{
     text-decoration: none;
 }
 
+.moreLink a:hover{
+    background: #90be59;
+    color: #fff;
+}
 
 /***************
   Product

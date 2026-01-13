@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CAT WATCH - Flamingo [SW F-01] アクティブモデル</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/product-post.css">
+</head>
+
+<body>
+  <!-- 共通ヘッダー -->
+  <header>
+    <div class="headerContent">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="株式会社 CAT WATCH"></a></div>
+    </div>
+    <nav class="globalNavigation">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li class="current"><a href="product.html">製品一覧</a></li>
+        <li><a href="company.html">会社情報</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- おわり／共通ヘッダー -->
+  <!-- メインコンテンツ -->
+  <main class="product-post">
+    <div class="product-photo">
+      <img src="images/product-photo.jpg" alt="SPORTIA α [SW S-01] スポーツモデル" class="border">
+    </div>
+    <div class="product-info">
+      <h2 class="product-title"><span>CAT WATCH</span><br>
+        SPORTIA α [SW S-01]<br>
+        スポーツモデル</h2>
+      <p>¥15,000-（税別）</p>
+      <h3>バンドのカラー</h3>
+      <ul class="color-list">
+        <li class="blue"></li>
+        <li class="yellow"></li>
+        <li class="green"></li>
+      </ul>
+      <p>高機能スポーツウォッチ。防水加工に加え、10mからの落衝撃に耐える強度を備えました。スポーツやアウトドアに最適なスマートウォチです。</p>
+      <ul class="features">
+        <li>1.4インチ フル円型 プラスティック有機ELディスプレイ採用</li>
+        <li>18時間連続使用できる高持続バッテリー内蔵</li>
+        <li>通話もできるワイヤレスマイクイヤホン付属</li>
+      </ul>
+      <h3>スペック</h3>
+      <table class="spec-list">
+        <tr>
+          <th>CPU</th>
+          <td>1.2GHz</td>
+        </tr>
+        <tr>
+          <th>サイズ（高さ×幅×厚さ）</th>
+          <td>46.4×53.6×9.7mm</td>
+        </tr>
+        <tr>
+          <th>ケース重量</th>
+          <td>38.5g</td>
+        </tr>
+        <tr>
+          <th>バッテリー持続時間</th>
+          <td>最大18時間（通常使用時）</td>
+        </tr>
+        <tr>
+          <th>防水性能</th>
+          <td>5ATM（50メートル防水）</td>
+        </tr>
+      </table>
+      <div class="cart">カートに追加する</div>
+    </div>
+  </main>
+  <!-- おわり／メインコンテンツ -->
+  <!-- 共通フッター -->
+  <footer>
+    <div class="siteLinks">
+      <div class="inner">
+        <div class="logo"><img src="images/logo_square.png" alt="株式会社 CAT WATCH"></div>
+        <div class="linkList">
+          <dl>
+            <dt><a href="index.html">ホーム</a></dt>
+            <dd><a href="index.html#contact">お問い合わせ</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="news.html">ニュース</a></dt>
+            <dd><a href="news.html#2021">2021年</a></dd>
+            <dd><a href="news.html#2020">2020年</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="product.html">製品一覧</a></dt>
+            <dd><a href="product.html#sportia_a">SPORTIA α</a></dd>
+            <dd><a href="product.html#leaf">LEAF</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="company.html">会社情報</a></dt>
+            <dd><a href="company.html#vision">ビジョン</a></dd>
+            <dd><a href="company.html#access">アクセス</a></dd>
+            <dd><a href="company.html#detail">会社概要</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <p><small class="copyright"> Copyright (C) 2020-2021 CAT WATCH.Co.,Ltd. All Rights Reserved.</small></p>
+  </footer>
+  <!-- おわり／共通フッター -->
+  <!-- 上に戻るボタン -->
+  <a href="#" id="gototop" class="gototop" data-scroll>^</a>
+
+  <!-- jQuery http://jquery.com/download/ -->
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+  <!-- スムーズスクロール https://github.com/cferdinandi/smooth-scroll-->
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+  <script>
+    $(function() {
+
+      /* スムーススクロールの初期化処理 */
+      smoothScroll.init();
+
+      /* トップへ戻るボタンの表示処理 */
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $('#gototop').fadeIn('slow');
+        } else {
+          $('#gototop').fadeOut('slow');
+        }
+      });
+    });
+  </script>
+</body></html>
